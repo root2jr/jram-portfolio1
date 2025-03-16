@@ -31,7 +31,7 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/contact', formData);
+      const response = await axios.post('https://jram-portfolio1-1.onrender.com', formData);
       if (response.data.success) {
         alert('Message sent successfully!');
         setFormData({ name: '', email: '', number: '', message: '' });

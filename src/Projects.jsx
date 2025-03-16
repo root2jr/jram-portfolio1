@@ -100,7 +100,7 @@ const Projects = () => {
         start:'top 70%',
         toggleActions: 'play none none reverse'
      }})
-     gsap.fromTo(textRef15,{opacity:0},{opacity:1,scrollTrigger:{
+     gsap.fromTo(textRef15.current,{opacity:0},{opacity:1,scrollTrigger:{
         trigger:textRef15.current,
         start:'top 70%',
         toggleActions: 'play none none reverse'
