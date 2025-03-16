@@ -10,24 +10,21 @@ const app = express();
 app.use(cors());
 app.use(express.json()); // Allows sending JSON data
 
-// Connect to MongoDB (Localhost)
-mongoose.connect('mongodb://127.0.0.1:27017/contactDB', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => console.log('MongoDB Connected (Localhost)'))
+// Connect to MongoDB Atlas
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log('MongoDB Connected (Atlas)'))
   .catch(err => console.log(err));
 
-// Create a Mongoose Schema & Model
+// Mongoose Schema & Model
 const contactSchema = new mongoose.Schema({
   name: String,
   email: String,
   number: String,
   message: String
 });
-
 const Contact = mongoose.model('Contact', contactSchema);
 
-// API Route to Handle Form Submission
+// API Route
 app.post('/contact', async (req, res) => {
   try {
     const { name, email, number, message } = req.body;
