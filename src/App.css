@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin:0;
+  overflow-x: hidden;
+}
+.main{
+  width:100%;
+  height:100vh;
+  background: url(./bg.jpeg);
+  background-position: center;
+  background-size: cover;
+  font-family: 'Poppins';
+}
+.bg{
+  width:100%;
+  height:100vh;
+  background-color: rgba(0, 0, 0, 0.397);
+  z-index: 10000;
+}
+nav{
+  width:100%;
+  height:75px;
+  background-color: black;
+  color:white;
+  display: flex;
+  font-size: 20px;
+  position: fixed;
+  z-index: 99999999;
+}
+nav h1 span{
+  color:crimson;
+}
+nav a{
+  color:white;
+  text-decoration: none;
+}
+nav h1{
+  margin-left: 20px;
+  text-align: center;
+  width: fit-content;
+  height:75px;
+  align-content: center;
+  cursor: pointer;
+}
+.ball{
+  position: absolute;
+  margin-left: 95%;
+  width:50px;
+  height:50px;
+  border-top:1px solid white;
+  border-radius: 50%;
+  justify-self: end;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  animation:rotate 4s infinite linear;
+}
+@keyframes rotate {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg)
+  }
+}
+.ball h2{
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  justify-self: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.text h1{
+  color:white; 
+  font-size: 70px;
+  font-weight: 500;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+
+.text h1 span {
+  color: crimson;
+  display: inline-block;
+  overflow: hidden; 
+  white-space: nowrap;
+  width: 0%; 
+  border-right: 1px solid crimson;
+  animation: typing 3s steps(7) infinite forwards;
+}
+
+@keyframes typing {
+  0% {
+    width: 0%; 
+  }
+  100% {
+    width: fit-content; 
+  }
+}
+
+.text button{
+  width:200px;
+  height:50px;
+  border:1px solid crimson;
+  background:transparent;
+  color:white;
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-top: 30px;
+  font-family: 'Poppins';
+}
+.text button:hover{
+  background-color: crimson;
+  transition: .5s ease;
+}
+.nav-bar{
+  position: fixed;
+  width:100%;
+  height:100vh;
+  background-color: black;
+  z-index: 99999999999999999;
+  transform: translateX(100%);
+}
+.nav{
+  width:100%;
+  height:20%;
+  align-content: center;
+}
+.nav-bar ul a{
+  color:white;
+  text-decoration: none;
+}
+
+.nav button{
+  width: 40px;
+  height:40px;
+  border-radius: 50%;
+  border:none;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding-top: 5px;
+  margin-left:95%;
+  background-color: transparent;
+  cursor: pointer;
+  color:white;
+  border:1px solid white;
+}
+.nav button:hover{
+  border:1px solid crimson;
+  background-color: crimson;
+  color:black;
+}
+
+.nav-bar ul{
+  width:100%;
+  height:80%;
+  list-style: none;
+  color: white;
+  font-family: 'Oswald';
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  font-size: 40px;
+  margin-top: -40px;
+}
+
+.nav-bar ul li{
+  width: 100%;
+  margin-top: 40px;
+  margin-left: -40px;
+}
+.slide{
+  transform: translateX(0%);
+  transition: .5s ease;
+}
+
+
+.nav-bar ul li:hover{
+  color:crimson;
+}
+
+
+@media screen and (max-width:600px) {
+  .text h1{
+    font-size: 40px;
+    margin-left: 50px;
+  }
+  .text button{
+    width: 150px;
+    height:50px;
+    margin-left: 50px;
+  }
+  .ball,.nav button{
+    margin-left: 80%;
+  }
+}
+@media screen and (min-width:400px) and (max-width:600px) {
+  .ball,.nav button{
+    margin-left: 85%;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .nav-bar ul li{
+    width: 100%;
+    margin-top: 40px;
+    margin-left: -40px;
+    font-size: 30px;
+  }
+  .nav-bar button{
+    width:30px;
+    height:30px;
+  }
+}

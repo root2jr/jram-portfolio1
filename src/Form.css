@@ -1,0 +1,91 @@
+.form{
+    width: 100%;
+    height:fit-content;
+    overflow: hidden;
+}
+.form h1{
+    padding-top: 75px;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+.form h1 span{
+    color: crimson;
+}
+.form form{
+    width: 100%;
+    height:70%;
+    overflow: hidden;
+}
+form input{
+    width: 40%;
+    height: 40px;
+    margin-left: 30%;
+    padding-left: 10px;
+    border-radius: 20px;
+    border:1px solid black;
+    margin-top: 20px;
+    font-family: 'Poppins';
+
+}
+.form textarea{
+    width: 40%;
+    height:300px;
+    margin-left: 30%;
+    margin-top: 20px;
+    border-radius:10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    resize: none;
+    border:1px solid black;
+    font-family: 'Poppins';
+}
+.form button{
+    width:40%;
+    height:60px;
+    border:1px solid crimson;
+    color:black;
+    margin-left: 30%;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 40px;
+    font-family: 'Poppins';
+
+}
+.form button:hover{
+    background-color: crimson;
+    color:white;
+    transition: .5s ease;
+}
+form input:focus, form textarea:focus, form input:hover, form textarea:hover{
+    outline:none;
+    border:1px solid crimson
+}
+@media screen and (max-width:600px) {
+    
+    .form{
+        height: max-content;
+        padding-bottom: 30px;
+    }
+    
+    form input{
+        width:80%;
+        margin-left: 10%;
+    }
+    .form textarea{
+        width:80%;
+        margin-left: 10%;
+    }
+}
+.form p{
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 13px;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+}
