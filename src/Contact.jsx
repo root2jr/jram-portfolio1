@@ -43,7 +43,7 @@ const Contact = () => {
 
 
   return (
-    <div className='contact'>
+    <div id='contact' className='contact'>
         <h1 ref={contactRef}> CONTACT <span>INFO</span></h1>
         <div className="c-container">
             <ul>

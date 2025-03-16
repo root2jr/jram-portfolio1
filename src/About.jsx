@@ -22,24 +22,24 @@ const About = () => {
             start:'top 70%',
             toggleActions:'play none none reverse'
           }})
-          gsap.fromTo(aboutRef2.current,{opacity:0},{opacity:1,delay:1,scrollTrigger:{
+          gsap.fromTo(aboutRef2.current,{opacity:0},{opacity:1,delay:.5,scrollTrigger:{
             trigger:aboutRef2.current,
             start:'top 70%',
             toggleActions:'play none none reverse'
           }})
-          gsap.fromTo(aboutRef3.current,{opacity:0},{opacity:1,delay:2,scrollTrigger:{
+          gsap.fromTo(aboutRef3.current,{opacity:0},{opacity:1,delay:1,scrollTrigger:{
             trigger:aboutRef3.current,
             start:'top 70%',
             toggleActions:'play none none reverse'
           }})
-          gsap.fromTo(aboutRef4.current,{opacity:0},{opacity:1,delay:3,scrollTrigger:{
+          gsap.fromTo(aboutRef4.current,{opacity:0},{opacity:1,delay:1.5,scrollTrigger:{
             trigger:aboutRef4.current,
             start:'top 70%',
             toggleActions:'play none none reverse'
           }})
-          gsap.fromTo(aboutRef5.current,{opacity:0},{opacity:1,delay:4,scrollTrigger:{
+          gsap.fromTo(aboutRef5.current,{opacity:0},{opacity:1,delay:2,scrollTrigger:{
             trigger:aboutRef5.current,
-            start:'top 70%',
+            start:'top 80%',
             toggleActions:'play none none reverse'
           }})
     },[])
@@ -48,7 +48,7 @@ const About = () => {
 
 
   return (
-    <div className='about'>
+    <div id='about' className='about'>
         <div className="ab-left">
             <img ref={aboutRef1} src={aboutImg}></img>
         </div>

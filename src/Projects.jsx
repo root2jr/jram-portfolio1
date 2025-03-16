@@ -111,7 +111,7 @@ const Projects = () => {
  
  
     return (
-    <div className='projects'>
+    <div id='projects' className='projects'>
           <h1 ref={headRef}>MY <span>PROJECTS</span></h1>
           <div className="pro-container">
             <div className="proo">

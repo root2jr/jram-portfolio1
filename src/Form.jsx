@@ -44,7 +44,7 @@ const Form = () => {
   };
 
   return (
-    <div className='form'>
+    <div id='contact' className='form'>
       <h1 ref={formRef1}>CONTACT <span>ME</span></h1>
       <form onSubmit={handleSubmit}>
         <input ref={formRef2} type='text' placeholder='Name' value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />

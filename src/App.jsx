@@ -18,8 +18,8 @@ function App() {
             <ul>
                    <a href='#' onClick={nav}><li>HOME</li></a>
                    <a href='#services' onClick={nav}><li>SERVICES</li></a>
-                   <a href='#' onClick={nav}><li>PROJECTS</li></a>
-                   <a href='#' onClick={nav}><li>CONTACT</li></a>
+                   <a href='#projects' onClick={nav}><li>PROJECTS</li></a>
+                   <a href='#contact' onClick={nav}><li>CONTACT</li></a>
                </ul>
           </div>
            <div className="bg">
@@ -32,7 +32,7 @@ function App() {
                   </nav>
                   <div className="text">
                       <h1>HELLO,<br/>MY NAME IS<br/><span>JAYRAM</span></h1>
-                      <a href='#'><button>PORTFOLIO</button></a>
+                      <a href='#about'><button>PORTFOLIO</button></a>
                   </div> 
            </div>
        </div>
