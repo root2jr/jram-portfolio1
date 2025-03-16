@@ -31,7 +31,7 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://jram-portfolio1-1.onrender.com', formData);
+      const response = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/contact`, formData);
       if (response.data.success) {
         alert('Message sent successfully!');
         setFormData({ name: '', email: '', number: '', message: '' });
