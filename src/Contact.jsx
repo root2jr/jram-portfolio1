@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
 import './Contact.css'
 import instaLogo from './instagram-logo.png'
-import snapLogo from './Snapchat-Logo.jpg'
-import whatsappLogo from './whatsapp.png'
+import snapLogo from './linkedinlogo.jpg'
+import whatsappLogo from './gihublogo.png'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
@@ -43,7 +43,7 @@ const Contact = () => {
 
 
   return (
-    <div id='contact' className='contact'>
+    <div  className='contact'>
         <h1 ref={contactRef}> CONTACT <span>INFO</span></h1>
         <div className="c-container">
             <ul>
@@ -52,15 +52,15 @@ const Contact = () => {
                        <h1>Instagram</h1>
                        <p>@itz_jram18</p>
                     </div></a></li>
-                <li ref={contactRef2}><a href='https://www.snapchat.com/itz_jram18'><div className="c-1">
+                <li ref={contactRef2}><a href='https://www.linkedin.com/in/jayaraman-pv-54111a338/'><div className="c-1">
                        <img src={snapLogo}></img>
-                       <h1>Snapchat</h1>
-                       <p>@itz_jram18</p>
+                       <h1>LinkedIn</h1>
+                       <p>Jayaraman PV</p>
                     </div></a></li>
-                <li ref={contactRef3}><a href='https://web.whatsapp.com/'><div className="c-1">
+                <li ref={contactRef3}><a href='https://github.com/root2jr'><div className="c-1">
                        <img src={whatsappLogo}></img>
-                       <h1>WhatsApp</h1>
-                       <p>@itz_jram18</p>
+                       <h1>Github</h1>
+                       <p>root2jr</p>
                     </div></a></li>
             </ul>
         </div>

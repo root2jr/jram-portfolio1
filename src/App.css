@@ -30,6 +30,22 @@ nav{
   position: fixed;
   z-index: 99999999;
 }
+.border{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+  background-color:transparent;
+  z-index: 50;
+  position: absolute;
+  border-bottom: 1.5px solid white;
+  border-top: 1.5px solid white;
+  animation: rotate 4s infinite;
+  border-right:1.5px solid white;
+}
+nav::-webkit-scrollbar-thumb{
+  width:0px;
+  background-color: transparent;
+}
 nav h1 span{
   color:crimson;
 }
@@ -50,7 +66,6 @@ nav h1{
   margin-left: 95%;
   width:50px;
   height:50px;
-  border-top:1px solid white;
   border-radius: 50%;
   justify-self: end;
   align-self: center;
@@ -60,7 +75,6 @@ nav h1{
   justify-items: center;
   overflow: hidden;
   cursor: pointer;
-  animation:rotate 4s infinite linear;
 }
 @keyframes rotate {
   from{
@@ -127,6 +141,7 @@ nav h1{
   background-color: black;
   z-index: 99999999999999999;
   transform: translateX(100%);
+  cursor: pointer;
 }
 .nav{
   width:100%;

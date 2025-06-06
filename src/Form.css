@@ -52,7 +52,7 @@ form input{
     background-color: white;
     border-radius: 40px;
     font-family: 'Poppins';
-
+    cursor:pointer
 }
 .form button:hover{
     background-color: crimson;

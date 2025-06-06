@@ -50,6 +50,7 @@
     background-color: white;
     margin-top: 20px;
     letter-spacing: 5px;
+    cursor: pointer;
 }
 .ab-right button:hover{
     background-color: crimson;
@@ -88,4 +89,9 @@
     .about{
         height:250vh;
     }
+}
+    
+
+.text button{
+    cursor:pointer;
 }

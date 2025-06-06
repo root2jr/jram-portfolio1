@@ -1,9 +1,15 @@
-.projects{
+.projects {
     width: 100%;
-    height:fit-content;
+    height: fit-content;
     overflow: hidden;
 }
-.projects h1{
+
+.projects::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+.projects h1 {
     text-align: center;
     padding-top: 75px;
     font-size: 50px;
@@ -12,90 +18,241 @@
     font-family: 'Poppins';
     padding-top: 75px;
 }
-.projects span{
-    color:crimson;
+
+.projects span {
+    color: crimson;
 }
-.pro-container{
+
+.pro-container {
     width: 80%;
-    height:1600px;
+    height: 1600px;
     margin-left: 10%;
     margin-top: 50px;
     padding-bottom: 70px;
 }
-.proo{
-    width:100%;
-    height:20%;
+
+.proo {
+    width: 100%;
+    height: 20%;
     display: flex;
 }
-.pro-1{
-    width:50%;
-    height:100%;
-    background-image:  linear-gradient(60deg, #29323c, #485563b9);
+
+.pro-1 {
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(60deg, #29323c, #485563b9);
     color: white;
 }
-.pro-bg{
-    width:50%;
-    height:100%;
+
+.pro-bg {
+    width: 50%;
+    height: 100%;
     background-image: url(services-bgg.png);
     background-position: center;
     background-size: cover;
     font-family: 'Poppins';
 }
-.pro-1 h1{
-   letter-spacing: normal;
-   text-align: left;
-   font-size: 40px;
-   padding-left: 20px;
-   padding-top: 40px;
+
+.pro-bgg {
+    width: 50%;
+    height: 100%;
+    background-image: url(portfolio-cover.PNG);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins';
 }
-.pro-1 h2{
-   letter-spacing: normal;
-   text-align: left;
-   font-size: 20px;
-   font-weight: 400;
-   padding-left: 20px;
-   font-family: 'Poppins';
-   margin-top: 10px;
-   
+
+.pro-bggg {
+    width: 50%;
+    height: 100%;
+    background-image: url(iphone.PNG);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins';
 }
-.pro-1 p{
-   letter-spacing: normal;
-   text-align: left;
-   padding-left: 20px;
-   font-family: 'Poppins';
-   font-weight: 300;
-   font-size: 15px;
-   margin-top: 10px;
-   padding-right: 20px;
+
+.pro-bgggg {
+    width: 50%;
+    height: 100%;
+    background-image: url(iphone-cover.PNG);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins';
+}
+
+.pro-1 h1 {
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+.pro-1 h2 {
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 20px;
+    font-family: 'Poppins';
+    margin-top: 10px;
 
 }
+
+.pro-1 p {
+    letter-spacing: normal;
+    text-align: left;
+    padding-left: 20px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 10px;
+    padding-right: 20px;
+
+}
+
 @media screen and (min-width:700px) and (max-width:900px) {
-    .pro-container{
-        height:2200px
+    .pro-container {
+        height: 2200px
     }
 }
-@media screen and (max-width:699px){
-    .pro-container{
-        height:3000px;
+
+@media screen and (max-width:699px) {
+    .pro-container {
+        height: 3000px;
     }
-    .proo{
+
+    .proo {
         flex-direction: column;
     }
-    .pro-bg{
-        width:0px;
+
+    .pro-bg {
+        width: 0px;
         height: 0;
     }
-    .pro-1{
-        width:100%;
+
+    .pro-1 {
+        width: 100%;
         height: 70%;
         margin-top: 20px;
     }
 }
-@media screen and (max-width:350px){
-    .pro-1{
-        height:100%;
+
+@media screen and (max-width:350px) {
+    .pro-1 {
+        height: 100%;
     }
-    .pro-1 h2{
+
+    .pro-1 h2 {
         font-size: 18px;
+    }
+}
+
+.projects a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    .projects {
+        height: max-content;
+    }
+
+    .pro-container {
+        height: max-content;
+        padding-bottom: 100px;
+    }
+
+    .proo {
+        height: max-content;
+    }
+
+    .pro-1 {
+        padding-bottom: 40px;
+    }
+
+    .pro-container a {
+        padding: 0px;
+    }
+}
+
+
+.project-content{
+    width:80%;
+    height:80%;
+    background-color: white;
+    border:1px solid black;
+    position: fixed;
+    z-index: 10;
+    top: 15%;
+    left:10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins';
+    scale:0;
+}
+.project-content h1{
+    padding:20px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color:crimson;
+}
+.project-content h3{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top:20px;
+}
+.project-content h3 span{
+    font-size: 15px;
+    cursor:pointer;
+}
+.project-content h3 span:hover{
+    text-decoration: underline;
+}
+.project-content img{ 
+    width: 70%;
+    height:70%;
+    justify-self: center;
+    object-fit: cover;
+}
+.pc-nav{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.pc-nav button{
+    position: absolute;
+    right:30px;
+    top:30px;
+    border-radius: 50%;
+    border:1px solid crimson;
+    background-color: transparent;
+    color:crimson;
+    padding:10px;
+    cursor:pointer;
+    transition: .5s ease;
+}
+.pc-nav button:hover{
+    background-color: crimson;
+    color:white;
+}
+.app{
+    scale:1;
+    animation: appear .5s ease;
+}
+@keyframes appear {
+    from{
+        scale:0;
+        opacity: 0;
+        filter: blur(30px);
+    }
+    to{
+        scale:1;
+        filter: blur(0px);
+
     }
 }
